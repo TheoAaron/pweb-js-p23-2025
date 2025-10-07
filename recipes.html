@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Collection</title>
+    <link rel="stylesheet" href="css/recipes.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-left">
+            <h2>Recipe Collection</h2>
+        </div>
+        <div class="nav-right">
+            <span id="userName" class="nav-username"></span>
+            <button id="logoutBtn" class="btn-logout">LOGOUT</button>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <h1>Your Recipe Collection</h1>
+            <p>Discover and manage your favorite recipes</p>
+        </section>
+
+        <section class="controls">
+            <input id="searchInput" type="search" placeholder="Search recipes..." />
+            <select id="cuisineFilter">
+                <option value="">All Cuisines</option>
+            </select>
+            <div class="info" id="resultsInfo"></div>
+        </section>
+
+        <section id="error" class="message error-message" style="display:none;"></section>
+        <section id="recipesContainer" class="recipes-grid"></section>
+
+        <div class="pager">
+            <button id="showMoreBtn" class="btn">Show More</button>
+        </div>
+    </main>
+
+    <div id="modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <button id="closeModal" class="modal-close">×</button>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="js/types.js"></script>
+    <script src="js/recipes.js"></script>
+</body>
+</html>
