@@ -1,4 +1,4 @@
-import { User, UsersResponse } from '/js/types.js';
+import { User, UsersResponse } from './types.js';
 
 class LoginManager {
     private form: HTMLFormElement;
