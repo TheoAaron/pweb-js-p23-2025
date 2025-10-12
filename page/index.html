@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Collection - Login</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-card">
+            <div class="login-header">
+                <h1>Recipe Collection</h1>
+                <p>Please login to access your recipes</p>
+            </div>
+            
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                    <span class="error-message" id="usernameError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                    <span class="error-message" id="passwordError"></span>
+                </div>
+                
+                <button type="submit" id="loginBtn" class="login-btn">
+                    <span id="loginBtnText">Login</span>
+                    <div id="loginSpinner" class="spinner hidden"></div>
+                </button>
+                
+                <div id="errorMessage" class="error-message general-error hidden"></div>
+                <div id="successMessage" class="success-message hidden"></div>
+            </form>
+            
+            <div class="demo-info">
+                <h3>Demo Credentials:</h3>
+                <p><strong>Username:</strong> emilys</p>
+                <p><strong>Password:</strong> any non-empty password</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
